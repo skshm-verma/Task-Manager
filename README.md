@@ -28,18 +28,20 @@ Welcome to the Task Management Application! This project is built to focus on ba
    Open your browser and navigate to https://task-manager-dob7.onrender.com/.
 
 2. **Create a task**:
-   - Fill in the task details in the provided form.
-   - Click the "Add Task" button to save the task.
+   - Fill in the task details in the provided input area.
+   - Click the "Submit" button to save the task.
 
 3. **Read tasks**:
    - View the list of all tasks on the main page.
 
 4. **Update/Edit a task**:
-   - Click the "Edit" button next to the task you want to update.
-   - Modify the task details and save changes.
+   - Click the "Edit" button icon if you want to update.
+   - It will take you another page for editing the selected task.
+   - Modify the task details and click upon the edit button to save the changes.
+   - After modifying go onto the main tasks listed page by clicking onto the back to tasks button.
 
 5. **Delete a task**:
-   - Click the "Delete" button next to the task you want to remove.
+   - Click the "Delete" button next to the task if you want to remove it.
 
 ## 📱 Responsiveness
 
