@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express(); //we initialize and invoke it(express)
-const tasks = require('./routes/tasks');
-const connectDb = require('./db/connect');
+const tasks = require('./src/routes/tasks');
+const connectDb = require('./src/db/connect');
 require('dotenv').config();
-const notFound = require('./middleware/not-found');
-
+const notFound = require('./src/middleware/not-found');
+const errorHandlerMiddleware = require('./src/middleware/error-handler')
 
 //middleware
 app.use(express.static('./public'));
@@ -18,8 +18,8 @@ app.use(express.json());
 app.use('/api/v1/tasks',tasks);
 
 app.use(notFound);
-
-const port = 9000;
+app.use(errorHandlerMiddleware);
+const port = process.env.PORT || 9000;
 
 const start = async () => {
     try{
